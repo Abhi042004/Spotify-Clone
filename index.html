@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./util.css">
+</head>
+<body>
+    <div class="main-container">
+        <header class="flex">
+            
+            <div class="logo">
+                <a href=""><img class="spotify-logo" src="./Images/spotify-logo.svg" alt="Spotify Logo" height="32"></a>
+            </div>
+
+            <div class="nav-links flex" style="gap:20px;">
+                <div class="home-logo logo grey">
+                    <a href=""><img class="home-icon grey" src="./Images/house-door-fill.svg" alt="home-logo"  height="22px" style="padding: 0px 3px;"></a>
+                </div>
+
+                <div class="search-container">
+                    <a href=""><img src="./Images/search-icon.svg" alt="" class="search-icon" height="25px"></a>
+                    <input type="text" placeholder="What do you want to play?" class="search-bar" >     
+                    <div class="separator"></div>
+                    <img src="./Images/box-svgrepo-com.svg" alt="" class="browse-icon" height="30px">
+                </div>
+
+            </div>
+
+            <div class="auth-container flex" style="display: flex; gap: 10px;">
+                <a href="#" class="signup-link" style="height: 45px;
+                border-radius: 38px;
+                padding: 0 30px;
+                margin: 2px 0px 0px 0px;
+                transition: transform 0.2s ease-in;" ><p style="padding: 0px; margin: 11px 0px 0px 0px;" class="signup-text">Signup</p></a>
+                
+                <a href="#" class="login-link"><p class="login-text">Login</p></a>
+                
+            </div>
+            
+        </header>
+
+        <section class="content-section">
+            <div class="sidebar">
+                <div class="left-bar">
+                    
+                    <div class="library-header">
+                        <div class="library-title">
+                            
+                            <p>Your Library</p>
+                        </div>
+                    </div>
+                    <img src="./Images/plus-svgrepo-com.svg" class="plus" alt="Add" height="18" style="margin-left: 100px;">
+                </div>
+        
+                <div class="library-content">
+                    <div class="playlist-section">
+                        <div class="text">
+                            <h3 style="margin: 0px;" >Create your first playlist</h3>
+                            <p style="font-size: medium;">It's easy, we'll help you</p>
+                        </div>
+                        <button class="btn-playlist"><p style="margin: 5px;">Create playlist</p></button>
+                    </div>
+
+                    <div class="podcast-section">
+                        <div class="text">
+                            <h3 style="margin: 0px;">Let's find some podcast to follow</h3>
+                            <p style="font-size: medium;">We'll keep you updated on new episodes</p>
+                        </div>
+                        <button class="btn-playlist"><p style="margin: 5px;">Browse podcast</p></button>
+                    </div>
+                </div>
+                    <div class="bottom">
+                        <ul>
+                            <li>Legal</li>
+                            <li>Safe & Privacy Center</li>
+                            <li>Privacy Policy</li> 
+                            <li>Cookies</li> 
+                            <li>About ads</li>  
+                            <li>Accessibility</li>   
+                        </ul>
+                    </div>
+                    <button class="btn-lang"><img src="./Images/icons8-globe-64.png" alt="Language" height="20" style="margin-right: 5px;">English</button>
+                </div>
+        
+                <div class="main-content-area">
+
+                    <div class="flex text">
+                        <h1 style="margin: 30px 20px 20px 20px;"><span>Popular Artist</span></h1>
+                        <h4 style="margin-right: 15px; margin-top: 30px;"><span>Show All</span> </h4>
+                    </div>
+                
+                    <div class="artist">
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 60%; left: 70%;">
+                            <img src="./Images/Singers/AP-Dhillon.jpg" alt="AP-Dhillon" height="75%" width="100%" style="border-radius: 50%; object-fit: cover; ">
+
+                            
+
+                            <h3 style="margin:5px 0px 0px 0px;"><span>AP-Dhillon</span></h3>
+                            <p style="margin: 0px; color: grey">Artist</p>
+                        </div>
+                
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 60%; left: 70%;">
+                            <img src="./Images/Singers/ar-rahman.jpg" alt="AR-Rahman" height="75%" width="100%" style="border-radius: 50%; object-fit: cover;">
+                            <h3 style="margin:5px 0px 0px 0px;"><span>A.R.Rahman</span></h3>
+                            <p style="margin: 0px;color: grey">Artist</p>
+                        </div>
+                
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 60%; left: 70%;">
+                            <img src="./Images/Singers/Arjit-Singh.jpg" alt="Arjit-Singh" height="75%" width="100%" style="border-radius: 50%; object-fit: cover;">
+                            <h3 style="margin:5px 0px 0px 0px;"><span>Arjit Singh</span></h3>
+                            <p style="margin: 0px;color: grey">Artist</p>
+                        </div>
+                
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 60%; left: 70%;">
+                            <img src="./Images/Singers/KK.jpg" alt="KK" height="75%" width="100%" style="border-radius: 50%; object-fit: cover;">
+                            <h3 style="margin:5px 0px 0px 0px;"><span>KK</span></h3>
+                            <p style="margin: 0px;color: grey">Artist</p>
+                        </div>
+                
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 60%; left: 70%;"> 
+                            <img class="img-5" src="./Images/Singers/Pritam.jpg" alt="Pritam" height="75%" width="100%" style="border-radius: 50%; object-fit: cover;">
+                            <h3 style="margin:5px 0px 0px 0px;"><span>Pritam</span></h3>
+                            <p style="margin: 0px;color: grey">Artist</p>
+                        </div>
+                    </div>
+                
+                    <div class="flex text">
+                        <h1 style="margin: 20px;"><span>Popular Album</span></h1>
+                        <h4 style="margin-right: 15px; margin-top: 30px;"><span>Show All</span></h4>
+                    </div>
+                
+
+
+                    <div class="artist">
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 55%; left: 75%;">
+
+                            <img src="./Images/Singers/yo-yo-honey-singh.png" alt="yo-yo-honey-singh" height="220px" width="100%" style="object-fit: cover; border-radius: 8px;">
+                            <h3 style="margin:5px 0px 0px 0px;"><span>Glory</span></h3>
+                            <p style="margin: 0px;color: grey">Yo Yo Honey Singh</p>
+                        </div>
+                
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 55%; left: 75%;">
+                            <img src="./Images/Singers/Aashiqui2.jpg" alt="Aashiqui2" height="220px" width="100%" style="object-fit: cover;border-radius: 8px;">
+                            <h3 style="margin:5px 0px 0px 0px;"><span>Aashiqui</span></h3>
+                            <p style="margin: 0px;color: grey">Mithoon, Ankit Tiwari</p>
+                        </div>
+                
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 55%; left: 75%;">
+                            <img src="./Images/Singers/Stree.jpg" alt="Stree" height="220px" width="100%" style="object-fit: cover;border-radius: 8px;">
+                            <h4 style="margin:5px 0px 0px 0px;"><span>Aaj Ki Raat from("Stree 2")</span></h4>
+                            <p style="margin: 0px;color: grey">Sachin Jigar</p>
+                        </div>
+                
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 55%; left: 75%;">
+                            <img src="./Images/Singers/Karan.jpg" alt="Karan" height="220px" width="100%" style="object-fit: cover;border-radius: 8px;">
+                            <h3 style="margin:5px 0px 0px 0px;"><span>Making Memories</span></h3>
+                            <p style="margin: 0px;color: grey">Karan Aujila, Ikky</p>
+                        </div>
+                
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 55%; left: 75%;"> 
+                            <img src="./Images/Singers/Weeknd.jpg" alt="Weeknd" height="220px" width="100%" style="object-fit: cover;border-radius: 8px;">
+                            <h3 style="margin:5px 0px 0px 0px;"><span>After Hours</span></h3>
+                            <p style="margin: 0px;color: grey">Weeknd</p>
+                        </div>
+                    </div>
+                
+                    <div class="flex text">
+                        <h1 style="margin: 20px;"><span>Popular Radio</span></h1>
+                        <h4 style="margin-right: 15px; margin-top: 30px;"><span>Show All</span></h4>
+                    </div>
+                
+
+
+                    <div class="artist">
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 57%; left: 75%;">
+                            <img src="./Images/Singers/Radio-1.jpg" alt="yo-yo-honey-singh" height="220px" width="100%" style="object-fit: cover; border-radius: 8px;">
+                            <p style="margin: 5px; color: grey">With Arjit-Singh, Sachin-Jigar, Mithoon and more</p>
+                        </div>
+                
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 57%; left: 75%;">
+                            <img src="./Images/Singers/Radio-2.jpg" alt="Aashiqui2" height="220px" width="100%" style="object-fit: cover;border-radius: 8px;">
+                            <p style="margin: 5px; color: grey">With Karan Aujia, Sidhu Moosewala and more</p>
+                        </div>
+                
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 57%; left: 75%;">
+                            <img src="./Images/Singers/Radio-3.jpg" alt="Stree" height="220px" width="100%" style="object-fit: cover;border-radius: 8px;">
+                            <p style="margin: 5px; color: grey; text-align: left;">With Santhosh, Anirudh Ravichandra...</p>
+                        </div>
+                
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 57%; left: 75%;">
+                            <img src="./Images/Singers/Radio-4.jpg" alt="Karan" height="220px" width="100%" style="object-fit: cover;border-radius: 8px;">
+                            <p style="margin: 5px; color: grey">With Pritam Chauhan, Vishal Mehra and more</p>
+                        </div>
+                
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 57%; left: 75%;"> 
+                            <img src="./Images/Singers/Radio-5.jpg" alt="Weeknd" height="220px" width="100%" style="object-fit: cover;border-radius: 8px;">
+                            <p style="margin: 5px; color: grey">Weeknd</p>
+                        </div>
+                    </div>
+                
+                    <div class="flex text">
+                        <h1 style="margin: 20px;"><span>Featured Charts</span></h1>
+                        <h4 style="margin-right: 15px; margin-top: 30px;"><span>Show All</span></h4>
+                    </div>
+                
+
+                    <div class="artist">
+                        <div class="card text hover" style="position: relative;">
+                              <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 50%; left: 75%;"> 
+                            <img src="./Images/Singers/Global.jpg" alt="Aashiqui2" height="200px" width="100%" style="object-fit: cover; border-radius: 8px;">
+                            <p style="margin: 5px; font-size: 15px;color: grey; width: 200px;">Your weekly update of the most played tracks right now - Global.</p>
+                        </div>
+                
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 50%; left: 75%;"> 
+                            <img src="./Images/Singers/India.jpg" alt="India Global" height="200px" width="100%" style="object-fit: cover;border-radius: 8px;">
+                            <p style="margin: 5px; font-size: 15px;color: grey; width: 200px;">Your weekly update of the most played tracks right now - India.</p>
+                        </div>
+                
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 50%; left: 75%;"> 
+                            <img src="./Images/Singers/Viral.jpg" alt="Pop" height="200px" width="100%" style="object-fit: cover;border-radius: 8px;">
+                            <p style="margin: 5px; font-size: 15px;color: grey; width: 200px;">Your weekly update of the most played tracks right now - Pop.</p>
+                        </div>
+                
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 50%; left: 75%;"> 
+                            <img src="./Images/Singers/USA.jpg" alt="Rock" height="200px" width="100%"" style="object-fit: cover;border-radius: 8px;">
+                            <p style="margin: 5px; font-size: 15px;color: grey; width: 200px;">Your weekly update of the most played tracks right now - Rock.</p>
+                        </div>
+                
+                        <div class="card text hover" style="position: relative;">
+                            <img class="play" src="./Images/icons8-play-48 (2).png" alt="" style=" border-radius: 50%; position: absolute; top: 50%; left: 75%;"> 
+                            <img src="./Images/Singers/Mexico.jpg" alt="Music" height="200px" width="100%" style="object-fit: cover;border-radius: 8px;">
+                            <p style="margin: 5px; font-size: 15px;color: grey; width: 200px;">Your weekly update of the most played tracks right now - Music.</p>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="foot">
+                                <div class="column">
+                                    <h2 style="font-size: 18px; color: white;">Companies</h2>
+                                    <span><p>About</p></span> 
+                                    <span><p>Jobs</p></span>
+                                    <span><p>For the Record</p></span>
+                                </div>
+
+                                <div class="column">
+                                    <h2 style="font-size: 18px; color: white;">Communities</h2>
+                                    <span><p>For Artists</p></span>
+                                    <span><p>Developers</p></span>
+                                    <span><p>Advertising</p></span>
+                                    <span><p>Investors</p></span>
+                                    <span><p>Vendors</p></span>
+                                </div>
+
+                                <div class="column">
+                                    <h2 style="font-size: 18px; color: white;">Useful-links</h2>
+                                    <span><p>Support</p></span>
+                                    <span><p>Free Mobile App</p></span>
+                                </div>
+
+                                <div class="column">
+                                    <h2 style="font-size: 18px; color: white;">Spotify plans</h2>
+                                    <span><p>Premium Individual</p></span>
+                                    <span><p>Premium Duo</p></span>
+                                    <span><p>Premium Family</p></span>
+                                    <span><p>Premium Student</p></span>
+                                    <span><p>Spotify Free</p></span>
+                                </div>
+                                
+                                <div class="column-1">
+                                    <img src="./Images/icons8-instagram-50.png" alt="" style="height: 20px;padding: 10px; border-radius: 50%;">
+                                    <img src="./Images/icons8-twitter-50.png" alt="" style="height: 20px;padding: 10px;border-radius: 50%;">
+                                    <img src="./Images/icons8-facebook-48.png" alt="" style="height: 20px;padding: 10px; border-radius: 50%;">
+                                </div>
+                    </div>
+
+
+                    <div class="copyright"><p>©2024 Spotify AB</p></div>
+                </footer> 
+            </div>
+        </section>
+                </div>
+                        
+        </div> 
+</body>
+</html>

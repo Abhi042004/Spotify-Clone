@@ -1,0 +1,53 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+.logo{
+    display: inline-block;
+    padding: 10px;
+}
+
+.grey{
+    background-color: #1f1f1f;
+}
+
+.normal-flex{
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    color: #FFFF;
+}
+
+
+span {
+    transition: text-decoration 0.3s ease, color 0.3s ease; /* Add transition for smooth effect */
+}
+
+span:hover {
+    text-decoration: underline;
+    color: white; /* You can change this color if needed */
+}
+
+.hover{
+  transition: background-color 0.1s ease-in;
+}
+
+.hover:hover .play{
+    opacity: 1;
+    
+}
+
+.hover:hover{
+    background-color: #1f1f1f;
+}
+
+.play{
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
